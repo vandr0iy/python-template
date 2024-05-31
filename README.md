@@ -7,3 +7,5 @@ in your favorite text editor with LSP is a great strategy.
 
 Hoping you've got [nix installed](https://nixos.wiki/wiki/Nix_Installation_Guide#Single-user_install),
 preferably with [direnv](https://github.com/nix-community/nix-direnv) support.
+
+**NOTE**: github actions are disabled by default.
