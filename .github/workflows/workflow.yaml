@@ -16,9 +16,5 @@ jobs:
       - uses: cachix/install-nix-action@v18
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: cachix/cachix-action@v8
-        with:
-          name: "<your cache here>"
-          signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
-      - run: nix develop --command foo
+      - run: nix develop --command run
 
