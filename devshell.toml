@@ -1,0 +1,25 @@
+# https://numtide.github.io/devshell
+[devshell]
+name = "python-template"
+
+packages = [
+  # add more packages here
+  # NOTE: add python packages directly in flake.nix!
+  "bash", # for the macos users
+
+]
+
+[[commands]]
+name = "pd"
+help = "install all python deps"
+command = "pip install -r ./requirements.txt -t ."
+
+[[commands]]
+name = "pf"
+help = "freeze the python deps in the current folder"
+command = "pip freeze > requirements.txt"
+
+[[commands]]
+name = "run"
+help = "run the script"
+command = "./script.py"
