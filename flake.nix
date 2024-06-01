@@ -25,6 +25,10 @@
           imports = [ (pkgs.devshell.importTOML ./devshell.toml) ];
           packages = [
             (pkgs.python312.withPackages(python-pkgs: [
+              python-pkgs.black
+              python-pkgs.pylint
+              python-pkgs.pytest
+              python-pkgs.python-lsp-server
               python-pkgs.requests
             ]))
           ];
